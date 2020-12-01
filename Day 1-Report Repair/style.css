@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.principal-text {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+nav {
+    text-align: center;
+}
+
+.AOC-link{
+   color: hotpink;
+   text-decoration: none;
+   margin-bottom: 20px;
+}
+
+.num-container {
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(39, 39, 39);
+    min-width: 54px;
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+}
+
+.num-container:hover{
+    background-color: darkblue;
+}
+
+.data-label{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(39, 39, 39);
+}
