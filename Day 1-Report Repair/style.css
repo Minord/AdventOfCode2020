@@ -21,7 +21,7 @@ nav {
 }
 
 .num-container {
-    padding: 5px;
+    padding: 2px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(39, 39, 39);
@@ -32,7 +32,8 @@ nav {
 }
 
 .num-container:hover{
-    background-color: darkblue;
+    background-color: rgb(255, 103, 149);
+    cursor: default;
 }
 
 .data-label{
@@ -41,4 +42,66 @@ nav {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(39, 39, 39);
+}
+
+#part1-solver{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section{
+    display: block;
+    width: 33%;
+    padding: 20px;
+}
+
+.selected-num {
+    background-color: rgb(255, 79, 146);
+}
+
+.analized-num {
+    background-color: rgb(73, 36, 38);
+}
+
+.selected-num-2 {
+    background-color: rgb(255, 167, 51);
+}
+
+.analized-num-2 {
+    background-color: rgb(99, 59, 32);
+}
+
+.finded{
+    background-color: rgb(50, 148, 47);
+}
+
+.finded-text{
+    color: rgb(82, 231, 77);
+}
+
+button {
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(133, 62, 67);
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(133, 62, 67);
+    border-width: 1px;
+    padding: 5px;
+    font-size: 1em;
+    margin: 0 auto;
+    outline: none;
+}
+
+button:hover{
+    background-color: rgb(255, 79, 146);
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(255, 79, 146);
+    border-width: 1px;
+}
+
+button:active{
+    background-color: rgb(255, 188, 168);
 }
