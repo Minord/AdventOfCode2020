@@ -13,7 +13,6 @@
         </nav>
 
         
-        <h3 class = "data-label">Part 1:</h3>
         <p class = "data-label">Input Data:</p>
         <!--En esta parte tengo que estructurar la solucion en forma grafica.-->
         <!--En este caso lo que tengo es un lista de numero pero en este caso
@@ -23,27 +22,55 @@
         Este va ha hacer el grid de numeros-->
         <div id="input-container"></div>
 
-        <!--Presentador de resultados-->
-        <div id = "part1-solver">
-            <div class = "section">
-                <h3>Problem:</h3>
-                <p>We have to find two numbers in the list that it sum is 2020. X + Y = 2020</p>
-            </div>
-            <div class = "section">
-                <h3>Condition:</h3>
 
-                <h4 id = "condition">X + Y = 2020</h4>
-                <button id="execute1" onclick="findNumbers()">Buscar</button>
+        <div class = "part1-solver">
+            <!--Presentador de resultados-->
+            <div class = "sub-solver">
+                <h3 class = "data-label">Part 1:</h3>
+                <div class = "part1-solver">
+                    <div class = "section">
+                        <h3>Problem:</h3>
+                        <p>We have to find two numbers in the list that it sum is 2020. X + Y = 2020</p>
+                    </div>
+                    <div class = "section">
+                        <h3>Condition:</h3>
+    
+                        <h4 id = "condition">X + Y = 2020</h4>
+                        <button id="execute1" onclick="findNumbers()">Buscar</button>
+                    </div>
+                    <div class = "section">
+                        <h3>Response:</h3>
+                        <h4 id = "response">X * Y = ?????</h4>
+                    </div>
+                </div>
             </div>
-            <div class = "section">
-                <h3>Response:</h3>
-                <h4 id = "response">X * Y = ?????</h4>
+
+            <!--Presentador de resultados-->
+            <div class = "sub-solver">
+                <h3 class = "data-label">Part 2:</h3>
+                <div class = "part1-solver">
+                    <div class = "section">
+                        <h3>Problem:</h3>
+                        <p>We have to find three numbers in the list that it sum is 2020. X + Y + Z = 2020</p>
+                    </div>
+                    <div class = "section">
+                        <h3>Condition:</h3>
+    
+                        <h4 id = "condition">X + Y + Z= 2020</h4>
+                        <button id="execute2" onclick="findNumbers2()">Buscar</button>
+                    </div>
+                    <div class = "section">
+                        <h3>Response:</h3>
+                        <h4 id = "response2">X * Y * Z= ?????</h4>
+                    </div>
+                </div>
             </div>
         </div>
+
         
-        <h3 class = "data-label">Part 2:</h3>
+        
 
-
+        
         <!--Luego tengo que hacer una interfaz que tenga y que en primer lugar ejecute el algoritmo
         luego de ejecutarlo tendre que ir poniendo los numeros en ese caso en este caso tendria 
         que utilizar matematicas pero realmente no estoy seguro de eso.-->

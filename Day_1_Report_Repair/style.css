@@ -44,10 +44,13 @@ nav {
     border-bottom-color: rgb(39, 39, 39);
 }
 
-#part1-solver{
+.part1-solver{
     display: flex;
-    max-width: 800px;
-    margin: 0 auto;
+}
+
+.sub-solver{
+    display: block;
+    margin: 10px;
 }
 
 .section{
@@ -70,6 +73,14 @@ nav {
 
 .analized-num-2 {
     background-color: rgb(99, 59, 32);
+}
+
+.selected-num-3 {
+    background-color: rgb(255, 51, 204);
+}
+
+.analized-num-3 {
+    background-color: rgb(80, 32, 99);
 }
 
 .finded{

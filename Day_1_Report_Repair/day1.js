@@ -76,7 +76,64 @@ async function findNumbers(){
     }
 }
 
+
+
 //Parte 2
+async function findNumbers2(){
+    if(!inExecution){
+        inExecution = true;
+        dataDOM.forEach(element => {
+            element[1].classList.remove("selected-num");
+            element[1].classList.remove("selected-num-2");
+            element[1].classList.remove("analized-num");
+            element[1].classList.remove("analized-num-2");
+            element[1].classList.remove("finded");
+            document.getElementById("response").classList.remove("finded-text");
+        });
+    
+        for(var i = 0; i < dataDOM.length; i++){
+            //HigthLight i
+            //HigthLight i
+            let toRemove = new Array();
+    
+            dataDOM[i][1].classList.add("selected-num");
+            for(var j = i + 1; j < dataDOM.length; j++){
+                dataDOM[j][1].classList.add("selected-num-2");
+                toRemove.push(j);
+                if(dataDOM[i][0] + dataDOM[j][0] < 2020){
+                    await sleep(2);
+                    let toRemove2 = new Array();
+                    for(var k = j + 1; k < dataDOM.length; k++){
+                        dataDOM[k][1].classList.add("selected-num-3");
+                        toRemove2.push(k);
+                        await sleep(2);
+                        if(dataDOM[i][0] + dataDOM[j][0] + dataDOM[k][0] === 2020){
+                            dataDOM[i][1].classList.add("finded");
+                            dataDOM[j][1].classList.add("finded");
+                            dataDOM[k][1].classList.add("finded");
+                            document.getElementById("response2").textContent = "X * Y * Z= " + dataDOM[i][0] * dataDOM[j][0] * dataDOM[k][0];
+                            document.getElementById("response2").classList.add("finded-text");
+                        }
+                        dataDOM[k][1].classList.remove("selected-num-3");
+                        dataDOM[k][1].classList.add("analized-num-3");
+                    }
+                    toRemove2.forEach(index => {
+                        dataDOM[index][1].classList.remove("analized-num-3");
+                    });
+                }
+                dataDOM[j][1].classList.remove("selected-num-2");
+                dataDOM[j][1].classList.add("analized-num-2");
+            }
+            toRemove.forEach(index => {
+                dataDOM[index][1].classList.remove("analized-num-2");
+            });
+    
+            dataDOM[i][1].classList.remove("selected-num");
+            dataDOM[i][1].classList.add("analized-num");
+        }
+        inExecution = false;
+    }
+}
 
 
 
