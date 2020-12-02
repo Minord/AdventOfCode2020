@@ -95,7 +95,6 @@ async function findNumbers2(){
             //HigthLight i
             //HigthLight i
             let toRemove = new Array();
-    
             dataDOM[i][1].classList.add("selected-num");
             for(var j = i + 1; j < dataDOM.length; j++){
                 dataDOM[j][1].classList.add("selected-num-2");
