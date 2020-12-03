@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 2 - Password Philosophy</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--Title and links-->
+        <nav>
+            <h1>Day 2 - Password Philosophy</h1>
+            <div id = "links">
+                <a  class = "AOC-link" href="https://adventofcode.com/2020/day/2">Puzzle Description</a>
+                |
+                <a  class = "AOC-link" href="https://github.com/Minord/AdventOfCode2020">Github</a>
+            </div>
+        </nav>
+
+        <!--Part 1 and Part 2-->
+        <article>
+            <!--Part 1-->
+            <section>
+                <h2>Part 1:</h2>
+                <p>In this case we have to check on a list of rules and passwords if there are valid or not and count how many valid passwords are in the list.</p>
+
+                <div class="problems">
+                    <div class="problem min-width">
+                        <h4>Rules</h4>
+                        <h3 id="min">min = ?</h3>
+                        <h3 id="max">max = ?</h3>
+                        <h3 id="char">char = '?'</h3>
+                    </div>
+                    <div class="problem left-border">
+                        <h4>password</h4>
+                        <div id = "password-container"></div>
+                    </div>
+                </div>
+
+                <div class = "localResults">
+                    <h3 id = "counter">counter : 0</h3>
+                    <h3 id = "comparation">min <= 0 <= max</h3>
+                </div>
+
+                <div class ="globalResults">
+                    <h3 id="globalCounter">Total Solutions : 0</h3>
+                    <button onclick="part1()">Find All</button>
+                </div>
+
+            </section>
+            <!--Part 2-->
+            <section>
+                <h2>Part 2:</h2>
+            </section>  
+        </article>
+
+
+        <script type="text/javascript" src="day2.js"></script>
+    </body>
+</html>

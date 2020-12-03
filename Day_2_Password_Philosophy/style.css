@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-color: rgb(39, 39, 39);
+    border-bottom-width: 1px;
+    padding-bottom: 20px;
+}
+
+a{
+    color: rgb(62, 184, 255);
+    text-decoration: none;
+}
+
+article {
+    display: flex;
+}
+
+section {
+    padding: 20px;
+    display: block;
+    width: 50%;
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgb(39, 39, 39);
+}
+
+h2 {
+    padding-left: 20px;
+    max-width: 200px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(39, 39, 39);
+}
+
+.problems {
+    display: flex;
+}
+
+.problem{
+    display: inline;
+    padding: 10px;
+}
+
+.left-border {
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgb(39, 39, 39);
+}
+
+.letter {
+    display: inline-block;
+    font-size: 2em;
+    border: solid;
+    border-width: 1px;
+    padding: 2px;
+    margin: 2px;
+    border-color: rgb(39, 39, 39);
+}
+
+#password-container {
+    display: block;
+}
+
+#links {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#globalCounter{
+    display: inline-block;
+    font-size: 1.5em;
+    color: rgb(167, 242, 255);
+    margin: 0px;
+}
+
+
+button {
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(51, 120, 177);
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(51, 120, 177);
+    border-width: 1px;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: auto;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+}
+
+button:hover{
+    background-color:  rgb(62, 184, 255);
+    border-radius: 0px;
+    border-style: solid;
+    border-color:  rgb(62, 184, 255);
+    border-width: 1px;
+}
+
+button:active{
+    background-color: rgb(168, 252, 255);
+}
+
+
+.globalResults{
+    display: block;
+    position: relative;
+}
+
+.ok{
+    background-color: rgb(20, 170, 145);
+}
+
+.no{
+    background-color: rgb(75, 34, 94);
+}
+
+.evaling{
+    background-color: rgb(62, 184, 255);
+}
+
+.min-width{
+    min-width: 140px;
+}
