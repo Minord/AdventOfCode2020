@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, h4{
+    text-align: center;
+    margin: 10px;
+}
+
+a{
+    color: rgb(62, 184, 255);
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+}
