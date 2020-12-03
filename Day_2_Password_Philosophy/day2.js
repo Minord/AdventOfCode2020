@@ -149,3 +149,64 @@ async function part1(){
         isWorking = false;
     }
 }
+
+
+
+var letterContainer2 = document.getElementById("password-container2");
+var firstElement = document.getElementById("first");
+var secondElement = document.getElementById("second");
+var charElement = document.getElementById("char2");
+var counterElement = document.getElementById("counter");
+var intervalElement = document.getElementById("comparation");
+var globalCounter2 = document.getElementById("globalCounter2");
+
+
+//Add Password Data Here
+function addPasswordData2(password){
+    firstElement.textContent = "first = " + password.min;
+    secondElement.textContent = "second = " + password.max;
+    charElement.textContent = `char = '${password.char}'`;
+    [...password.textpass].forEach(char => {
+        let newChar = document.createElement("DIV");
+        newChar.classList.add("letter");
+        newChar.textContent = char;
+        letterContainer2.appendChild(newChar);
+    });
+    
+}
+
+async function part2(){
+    var counterPass = 0;
+    for(var i = 0; i < passwordList.length; i++){
+        
+        addPasswordData2(passwordList[i]);
+        await sleep(50);
+        var first = passwordList[i].min;
+        var second = passwordList[i].max;
+        var textpass = passwordList[i].textpass;
+        var char = passwordList[i].char;
+        letterContainer2.childNodes.item(first).classList.add("evaling");
+
+        if(textpass.charAt(first - 1) === char){
+            if(textpass.charAt(second -1) != char){
+                letterContainer2.childNodes.item(second - 1).classList.add("ok");
+                counterPass++;
+                globalCounter2.textContent = "Total Solutions : " + counterPass;
+            }
+            else {
+                letterContainer2.childNodes.item(second - 1).classList.add("no");
+            }
+        } else{
+            if(textpass.charAt(second - 1) === char){
+                letterContainer2.childNodes.item(second - 1).classList.add("ok");
+                counterPass++;
+                globalCounter2.textContent = "Total Solutions : " + counterPass;
+            } else {
+                letterContainer2.childNodes.item(second - 1).classList.add("no");
+            }
+        }
+        await sleep(50);
+        removeAllChildNodes(letterContainer2);
+    }
+    console.log(counterPass);
+}
