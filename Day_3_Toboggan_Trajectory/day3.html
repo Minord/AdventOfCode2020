@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Day 2 - Toboggan Trajectory</title>
+        <title>Day 3 - Toboggan Trajectory</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>Day 2 - Toboggan Trajectory</h1>
+        <header>
+            <h1>Day 3 - Toboggan Trajectory</h1>
+            <nav>
+                <a href="https://minord.github.io/AdventOfCode2020">Home</a>
+                |
+                <a href="https://adventofcode.com/2020/day/3">Problem description</a>
+                |
+                <a href="https://github.com/Minord/AdventOfCode2020">Github</a>
+            </nav>
+        </header>
+
+        <canvas id="drawing-canvas"></canvas>
+
+        <div id = "result-log">
+            <div>trees in path = 0</div>
+        </div>
+
+        <footer>
+                <label for = "xstep">X-Step : </span>
+                <input type="text" id="xstep" form="xstep">
+                <label for = "ystep">Y-Step: </label>
+                <input type="text" id="ystep" form="ystep">
+                <button onclick="window.requestAnimationFrame(mainLoop)">execute</button>
+        </footer>
+
+        
         <script type="text/javascript" src="day3.js"></script>
     </body>
 </html>

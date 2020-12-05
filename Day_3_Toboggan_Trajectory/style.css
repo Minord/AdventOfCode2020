@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-color:  rgb(39, 39, 39);
+    border-width: 1px;
+}
+
+a{
+    color: rgb(62, 255, 142);
+    text-decoration: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+}
+
+#result-log{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+input{
+    background-color: black;
+    border-color:  rgb(39, 39, 39);
+    border-radius: 0px;
+    border-width: 1px;
+    outline-color: rgb(39, 39, 39);
+    color: chartreuse;
+    width: 30px;
+}
+
+button {
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:  rgb(38, 129, 76);
+    border-radius: 0px;
+    border-style: solid;
+    border-color:  rgb(62, 255, 142);
+    border-width: 1px;
+    padding: 5px;
+    font-size: 1em;
+    margin-left: auto;
+    outline: none;
+}
+
+button:hover{
+    background-color:  rgb(62, 255, 142);
+    border-radius: 0px;
+    border-style: solid;
+    border-color:  rgb(62, 255, 142);
+    border-width: 1px;
+}
+
+button:active{
+    background-color: rgb(168, 255, 168);
+}
+
+canvas{
+    width: 800px;
+    height: 500px;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
