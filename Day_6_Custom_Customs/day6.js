@@ -1,5 +1,3 @@
-var inputURL = "";
-
 var inputURL = "https://gist.githubusercontent.com/Minord/e9f28907925932391d831b6466690913/raw/c0a7f52e147ed3fe4bd7b374cde9d5dcf159d017/day6";
 
 var httpRequest = new XMLHttpRequest();
